@@ -1,6 +1,6 @@
 body {
     color: #2e4234;
-    background-color: rgb(255, 235, 205, 0.305);
+    background-color: rgba(18, 92, 18, 0.034);
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0; /*selain luo automaattisesti pienen marginaalin*/
@@ -25,9 +25,8 @@ header{
 }
 h1 {
     font-family: otsikko, "times serif";
-    font-size: 35px;
-    color: whitesmoke;
-    text-shadow: 4px 4px black;
+    font-size: 50px;
+    color: #2e4234;
     text-align: center;
     padding-top: 30px;
 }
