@@ -118,7 +118,7 @@ footer{
 /*tablettikoko*/
 @media screen and (min-width: 600px) {
     #etusivu {
-        background-image: url("LAUKKU.jpg");
+        background-image: url("BGlaukku.jpg");
         background-size: cover;
         height: 600px;
     }
