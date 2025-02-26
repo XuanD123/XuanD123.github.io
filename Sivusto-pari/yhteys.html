@@ -9,12 +9,51 @@
     <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
-    <header id="alisivu">
+    <header id="etusivu">
         <nav>
            <a href="index.html" id="valittu">Etusivu</a>
            <a href="tuotteet.html">Tuotteet</a>
            <a href="yhteys.html">Yhteystiedot</a>   
         </nav>
-        <h2> Myymälä</h2>
-           
-     </header>
+
+        <h1>Green Luxury</h1>
+    </header>
+    <h1>Yhteystiedot</h1>
+
+    
+    <h2>
+        <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=merimiehenkatu+10+helsinki&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes" id="enable-map-info">premium bootstrap themes</a><style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+       </p>
+    </h2>
+    <h1>Yhteystiedot</h1>
+    <p>Aukioloajat 
+        <br>Ma-Pe 10-18
+        <br>La 10-15
+        <br>Su Suljettu
+
+    </p>
+    <p>Green Luxury</p>
+    <p>Merimiehenkatu 10</p>
+    <p>00150 Helsinki</p>
+    <p>Puh. 050 222 3456</p>
+    <p>
+        <a href="mailto:greenluxury@gmail.com">
+
+        </a>
+    </p>
+    <h3>Yhteydenottolomake</h3> 
+
+    <form action="yhteys.php" method="post">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="viesti">Viesti:</label>
+        <textarea id="viesti" name="viesti" required></textarea>
+        <input type="submit" value="Lähetä">
+    </form>
+    <p>Kiitos yhteydenotostasi! Vastaamme mahdollisimman pian.</p>
+    <footer>
+        <p>&copy; Green Luxury 2025</p>
+    
+</html>
