@@ -1,16 +1,122 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fi">
 <head>
-    <meta charset="utf-8" />
-    <title>Oma sivuni</title>
+    <title>Green Luxury</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <link rel="stylesheet" href="tyyli.css">
 </head>
-
 <body>
-    < Tämän sivun on kirjoittanut VS Code -editorilla>
-        < Xuan>
-            </Xuan>
-            </p>
-</body>
+    <header id="etusivu">
+        <nav>
+           <a href="index.html" id="valittu">Etusivu</a>
+           <a href="tuotteet.html">Tuotteet</a>
+           <a href="yhteys.html">Yhteystiedot</a>   
+        </nav>
 
+        <h1>Green Luxury</h1>
+    </header>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="path/to/bag1 background removed.png" alt="tuote1">
+            <p>tuote1</p>
+        </div>
+        <div class="grid-item">
+            <img src="path/to/bag2 background removed.png" alt="tuote2">
+            <p>tuote2</p>
+        </div>
+        <div class="grid-item">
+            <img src="path/to/image3.jpg" alt="tuote3">
+            <p>tuote3</p>
+        </div>
+    </div>
+</body>
 </html>
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }   
+    @media only screen and (max-width: 600px) {
+        .grid-item {
+            font-size: 16px;
+        }
+    }
+</style>
+
+</style>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="path/to/bag1 background removed.png alt="tuote1">
+        <p>tuote1</p>
+    </div>
+    <div class="grid-item">
+        <img src="path/to/image2.jpg" alt="tuote2">
+        <p>tuote2</p>
+    </div>
+    <div class="grid-item">
+        <img src="path/to/image3.jpg" alt="tuote3">
+        <p>tuote3</p>
+    </div>
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .grid-item {
+            font-size: 16px;
+        }
+    }
