@@ -12,26 +12,23 @@ header{
 }
 
 /*fontit*/
-@font-face {
-    font-family: otsikko;
-    src: url(fontti/FredokaOne-Regular.ttf);
-}
+
 h1 {
-    font-family: otsikko, "cinzel decorative";
+    font-family:"times serif";
     font-size: 50px;
     color: #2e4234;
     text-align: center;
     padding-top: 30px;
 }
 h2, h3 {
-    font-family: otsikko, "times serif";
+    font-family:"times serif";
 }
 
 
 /*päävalikko*/
 nav a {
     background: #2e4234;
-    font-family: otsikko, "times serif";
+    font-family:"times serif";
     color:whitesmoke;
     text-decoration: none;
     display: inline-block;
@@ -87,20 +84,21 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /*some ikonit*/
 .fa {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: #2e4234;
     color:white;
+
 }
 .fa:hover {
-    opacity: 0.6;
+    opacity: 06;
 }
 
 /*tablettikoko*/
@@ -144,40 +142,14 @@ footer{
     }
     h3 {
         font-size: 20px;
-    }
-    .esittely {
-        font-size: 20px;  
-    }
-    #paasivu {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    #kahvimme {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    #musamme {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    .grid-yritys {
-        grid-template-areas:
-            'g1-h1'
-            'g2-hk1'
-            'g3-h2'
-            'g4-hk2';
-    }
+    }  
+
     footer{
         flex-direction: column;
         text-align: center;
     }
 }
+
 /*mobiilikoko*/
 @media (max-width: 600px) {
     #etusivu {
@@ -216,36 +188,55 @@ footer{
     h3 {
         font-size: 18px;
     }
-    .esittely {
-        font-size: 18px;  
-    }
-    #paasivu {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    #kahvimme {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    #musamme {
-        grid-template-areas:
-            'g1'
-            'g3'
-            'g2';
-    }
-    .grid-yritys {
-        grid-template-areas:
-            'g1-h1'
-            'g2-hk1'
-            'g3-h2'
-            'g4-hk2';
+   
     }
     footer{
         flex-direction: column;
         text-align: center;
+    }
+
+    /*suuri näyttö*/
+@media screen and (min-width: 1200px) {
+    #etusivu {
+        background-image: url("BGlaukku.jpg");
+        background-size: cover;
+        height: 950px;
+    }
+    nav a { 
+        font-size: 20px;
+        width: 130px;
+        height: 25px;
+        padding: 10px;
+        margin:5px 20px;
+    }
+    
+    #slogan {
+        font-size: 65px;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .toimintakehote {
+        font-size: 30px;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    
+    footer{
+        flex-direction: row;
+        text-align: left;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-height: 15%;
     }
 }
