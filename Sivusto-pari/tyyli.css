@@ -17,7 +17,7 @@ header{
     src: url(fontti/FredokaOne-Regular.ttf);
 }
 h1 {
-    font-family: otsikko, "times serif";
+    font-family: otsikko, "cinzel decorative";
     font-size: 50px;
     color: #2e4234;
     text-align: center;
@@ -57,19 +57,7 @@ nav a:hover {
 }
 
 /*kuvat*/
-figure {
-    border: 10px #cccccc solid;
-    margin: auto;
-    margin-bottom: 0px;
-    max-width: 400px;
-}
-figcaption {
-    background-color: darkslategray;
-    color: white;
-    font-style: italic;
-    padding: 8px;
-    text-align: center;
-}
+
 .kuva {
     max-width: 400px;
     vertical-align: middle;
@@ -98,7 +86,7 @@ th{
 footer{
     font-family: otsikko, "sans serif";
     font-size: 18px;
-    color: #2e4234;
+    color:#2e4234;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -112,7 +100,7 @@ footer{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: #2e4234;
+    background-color: whitesmoke;
     color:white;
 }
 .fa:hover {
@@ -121,15 +109,13 @@ footer{
 
 /*tablettikoko*/
 /*nämä voimassa kun ruutu on pieni (alle 600px)*/
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     #etusivu {
         background-image: url("BGlaukku.jpg");
         background-size: cover;
         height: 600px;
     }
-    #alisivut {
-        background-image: url(kuvat/tausta-mobiili.jpg);
-    }
+    
     nav a { 
         font-size: 15px;
         width: 100px;
@@ -165,6 +151,77 @@ footer{
     }
     .esittely {
         font-size: 20px;  
+    }
+    #paasivu {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    #kahvimme {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    #musamme {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    .grid-yritys {
+        grid-template-areas:
+            'g1-h1'
+            'g2-hk1'
+            'g3-h2'
+            'g4-hk2';
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*mobiilikoko*/
+@media (max-width: 600px) {
+    #etusivu {
+        background-image: url(BGlaukku.jpg);
+        background-size: cover;
+        height: 400px;
+    }
+    
+    nav a { 
+        font-size: 15px;
+        width: 100px;
+        height: 20px;
+        padding: 7px;
+        margin:3px 5px;
+    }
+    #slogan {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .toimintakehote {
+        font-size: 18px;
+    }
+    .sisalto {
+        margin: 3% 10% 3% 10%;
+    }
+    .alisivu-sisalto {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .esittely {
+        font-size: 18px;  
     }
     #paasivu {
         grid-template-areas:
