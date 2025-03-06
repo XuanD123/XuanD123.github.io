@@ -67,10 +67,6 @@ nav a:hover {
     height: 90%;
 }
 /*pääsivun sisällön asettelu*/
-/*.grid-teksti1 { grid-area: g1; }
-.grid-teksti2 { grid-area: g2; }
-.grid-kuva { grid-area: g3; }*/
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
