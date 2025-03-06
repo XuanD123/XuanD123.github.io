@@ -75,7 +75,9 @@ figcaption {
     vertical-align: middle;
     width: 100%;
 }
-
+.click-img {
+    height: 90%;
+}
 /*pääsivun sisällön asettelu*/
 /*.grid-teksti1 { grid-area: g1; }
 .grid-teksti2 { grid-area: g2; }
@@ -99,6 +101,7 @@ footer{
     color: #2e4234;
     background-color: white;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -117,7 +120,8 @@ footer{
 }
 
 /*tablettikoko*/
-@media screen and (min-width: 600px) {
+/*nämä voimassa kun ruutu on pieni (alle 600px)*/
+@media screen and (max-width: 600px) {
     #etusivu {
         background-image: url("BGlaukku.jpg");
         background-size: cover;
