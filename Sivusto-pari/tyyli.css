@@ -7,13 +7,10 @@ body {
 
     }
 
-
 header{
     text-align: center;
     padding-top: 30px;
 }
-
-/*fontit*/
 
 h1 {
     font-family:"times serif";
@@ -81,30 +78,16 @@ th{
 /*alatunniste, joka sivulla sama*/
 footer{
     font-family: otsikko, "sans serif";
-    font-size: 18px;
+    font-size: 16px;
     color:#2e4234;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-footer>div { 
-    flex:1;
-    margin-bottom: 20px;
-}
-/*body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}*/
 
-
-/*footer p:last-child {
-    margin-top: 20px;
-}
 /*some ikonit*/
 .fa {
     padding: 5px;
