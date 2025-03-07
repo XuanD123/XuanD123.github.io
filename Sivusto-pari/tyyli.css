@@ -4,7 +4,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     margin: 0; /*selain luo automaattisesti pienen marginaalin*/
-}
+
+    }
+
 
 header{
     text-align: center;
@@ -28,6 +30,7 @@ h2, h3 {
 /*päävalikko*/
 nav a {
     background: #2e4234;
+    border-radius: 10px;
     font-family:"times serif";
     color:whitesmoke;
     text-decoration: none;
@@ -87,7 +90,21 @@ footer{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+footer>div { 
+    flex:1;
+    margin-bottom: 20px;
+}
+/*body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}*/
 
+
+/*footer p:last-child {
+    margin-top: 20px;
+}
 /*some ikonit*/
 .fa {
     padding: 5px;
@@ -144,7 +161,7 @@ footer{
         font-size: 20px;
     }  
 
-    footer{
+   footer{
         flex-direction: column;
         text-align: center;
     }
